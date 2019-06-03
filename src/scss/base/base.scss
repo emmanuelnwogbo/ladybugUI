@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 60%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  background: linear-gradient(to right bottom, rgba(30, 55, 153,.1), rgba(236, 240, 241,1.0));
+  text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+  /*@media only screen and (min-width: 77em) {
+    padding: 0 11rem; 
+  }*/
+}
