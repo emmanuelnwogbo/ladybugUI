@@ -2,7 +2,6 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1000;
   padding: 2.5rem 7rem;
   display: flex;
   width: 100%;
@@ -11,6 +10,7 @@
   align-content: center;
   color: #ffffff;
   font-size: 2rem;
+  z-index: 4000; //highest zindex so far
 
   &__search {
     width: 60rem;
@@ -132,6 +132,23 @@
       & > div {
         margin-left: 1.5rem;
       }
+    }
+
+    &--cart-length {
+      position: absolute;
+      top: -1rem;
+      right: 0;
+      height: 2.5rem;
+      width: 2.5rem;
+      border-radius: 50%;
+      background: rgba(183, 28, 28,1.0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      font-size: 1.7rem;
+      font-weight: 900;
     }
   }
 }

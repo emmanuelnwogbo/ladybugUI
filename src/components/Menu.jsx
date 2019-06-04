@@ -5,7 +5,18 @@ import '../scss/components/_menu.scss'
 class Menu extends Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+      itemsInCart: []
+    }
+  }
+
+  lengthOfItemsInCartArray = () => {
+    const { itemsInCart } = this.state;
+    if (itemsInCart.length < 1) {
+      return;
+    }
+
+    return <span className="menu__item--cart-length">{itemsInCart.length}</span>
   }
 
   render() {
@@ -17,9 +28,9 @@ class Menu extends Component {
         <div className="menu__search">
           <input placeholder={`Search here...`} className="menu__search--input"/>
         </div>
-        <div className="menu__item">Npm packages</div>
         <div className="menu__item">Tools by us</div>
-        <div className="menu__item">Say hello!</div>
+        <div className="menu__item">Support</div>
+        <div className="menu__item">About</div>
         <div className="menu__item menu__item--signup">
           <svg className="menu__item--svg-signup">
             <use xlinkHref="./img/sprite.svg#icon-user" />
@@ -27,6 +38,7 @@ class Menu extends Component {
           <div><p>Login/Signup</p></div>
         </div>
         <div className="menu__item menu__item--last">
+          {this.lengthOfItemsInCartArray()}
           <svg className="menu__item--svg">
             <use xlinkHref="./img/sprite.svg#icon-cart" />
           </svg>

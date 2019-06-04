@@ -1,9 +1,10 @@
 .header {
   position: relative;
   background: linear-gradient(to bottom,rgba(176, 0, 255,1),rgba(106, 0, 255,1));
-  height: 90rem;
+  height: 93rem;
   display: flex;
   overflow: hidden;
+  z-index: 3000; //second to highest zindex so far
 
   &::before {
     content: '';
@@ -38,6 +39,7 @@
     top: 14rem;
     right: 71rem;
     z-index: 3; 
+    box-shadow: 0 14rem 1rem rgba(0, 0, 0, 0.1);
   }
 
   &__heading {

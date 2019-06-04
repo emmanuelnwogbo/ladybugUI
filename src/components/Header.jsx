@@ -22,7 +22,6 @@ class Header extends Component {
         <div className="header__half header__half--1">
         </div>
         <div className="header__half header__half--2">
-          <div className="header__half--2-bar"></div>
         </div>
       </div>
     )

@@ -16,8 +16,22 @@ body {
   overflow-x: hidden;
   background: linear-gradient(to right bottom, rgba(30, 55, 153,.1), rgba(236, 240, 241,1.0));
   text-rendering: optimizeLegibility;
-	overflow-x: hidden;
+  overflow-x: hidden;
+  height: 200vh;
   /*@media only screen and (min-width: 77em) {
     padding: 0 11rem; 
   }*/
+}
+
+.app {
+
+  &__menubackground {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2000; //3red highest zIndex
+    background: #ff002d;
+    height: 11rem;
+  }
 }

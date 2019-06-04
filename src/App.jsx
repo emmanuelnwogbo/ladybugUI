@@ -11,6 +11,7 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <div className="app__menubackground"></div>
         <Suspense fallback={<div>loading</div>}>
           <Menu />
         </Suspense>
